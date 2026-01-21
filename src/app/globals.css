@@ -120,6 +120,13 @@ header button:hover{
   color: var(--background);
 }
 
+.dropdown-menu{
+  display: none;
+  background-color: var(--text-color);
+  color: var(--background);
+
+}
+
 .footer{
   position: relative;
   height: auto;
@@ -228,7 +235,7 @@ li{
   font-size: 1.3rem;
 }
 
-/*ADD ANIMATION AT INTRO*/
+/*LANDING*/
 .landing{
   width: 95%;
   display: grid;
@@ -242,7 +249,6 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .landing-image img, .image-container img{
@@ -271,17 +277,24 @@ li{
     100%{transform: translateX(0);}
 }
 
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
 .landing-image{
   transform: translateX(-100%);
   animation: slideFromLeft 1.5s ease-in forwards;
 }
 
+.landing-text{
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
 
+/*BODY OF WORK*/
 .container{
-  width: 90%;
-  margin-top: 3%;
-  min-height: 70vh;
-  
+  width: 90%; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,6 +349,7 @@ li{
   object-fit: contain;
 }
 
+/*SERVICES*/
 .card-grid{
   display: flex;
   flex-wrap: nowrap;          /* NEVER wrap */
@@ -355,7 +369,7 @@ li{
 
 .card{
   flex: 0 0 450px; /* fixed card width */
-  height: 525px;
+  height: 500px;
 
   border-radius: 20px;
   background-color: transparent;
@@ -401,18 +415,59 @@ li{
   font-weight: 300;
 }
 
+/*PROJECTS*/
+.projects-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 .projects{
-  border: 1px solid var(--text-color);
-  width: 90%;
-  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-image{
-  max-width: 400px;
-  width: 50%;
+  width: 100%;
+  height: 200px;
+  display: block;
 }
 
+.project-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
 
+.project-des{
+  display: inherit;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.project-des a{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: -5px;
+}
+
+.project-des a:hover{
+  background-color: var(--text-color);
+  color: var(--background);
+}
+
+.project-des p{
+  width: 100%;
+}
 
 @media only screen and (max-width: 1200px){
   .card-grid{
@@ -436,10 +491,11 @@ li{
     font-size: 0.8rem;
   }
   
-  header nav{
-    display: none;
+  header nav button{
+    font-size: 1rem;
   }
   
+
   .burger, .cross{
     position: relative;
     display: none;
@@ -451,9 +507,11 @@ li{
     transition: opacity 0.3s ease-in-out;
   }
 
+  /*NEED TO CREATE DROPDOWN*/
   .burger.show, .cross.show{
     display: block;
     opacity: 1;
+    display: none;
   }
 
   .burger img, .cross img{
@@ -506,6 +564,10 @@ li{
 
   .container{
     width: 95%;
+  }
+
+  .container h3{
+    margin-top: 5%;
   }
 
   .card-grid{

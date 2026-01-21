@@ -55,7 +55,14 @@ export default function Header(){
                 <button onClick={() => scrollToSection("about")}>About</button>
                 <button onClick={() => scrollToSection("services")}>Services</button>
                 <button onClick={() => scrollToSection("projects")}>Projects</button>
-                <button>Contact</button>
+                <button onClick={() => scrollToSection("contacts")}>Contact</button>
+            </nav>
+
+            <nav className="dropdown-menu">
+                <button onClick={() => scrollToSection("about")}>About</button>
+                <button onClick={() => scrollToSection("services")}>Services</button>
+                <button onClick={() => scrollToSection("projects")}>Projects</button>
+                <button onClick={() => scrollToSection("contacts")}>Contact</button>
             </nav>
         </header>
     )
