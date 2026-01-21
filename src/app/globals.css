@@ -423,8 +423,8 @@ li{
   justify-content: center;
 }
 .projects{
-  width: 400px;
-  max-width: 95%;
+  max-width: 400px;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
