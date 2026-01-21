@@ -422,6 +422,7 @@ li{
   gap: 20px;
   justify-content: center;
 }
+
 .projects{
   max-width: 400px;
   width: 95%;
@@ -492,8 +493,9 @@ li{
     font-size: 0.8rem;
   }
   
-  header nav button{
+  header button{
     font-size: 1rem;
+    padding: 5px;
   }
   
 
