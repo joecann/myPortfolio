@@ -19,8 +19,8 @@ export default function Home() {
         <div className="landing-text">
           <h1>Joseph Cann</h1>
           <h2>Full Stack Web Developer</h2>
-          <p>I turn ideas into sleek, user-friendly web applications, building modern frontends with React and Next.js. 
-            I work closely with clients to deliver solutions that look great, perform flawlessly, and scale with your needs.</p>
+          <p>I turn ideas into sleek, modern, user-friendly web applications. Working closely with clients to deliver solutions 
+            that don't just look great, but perform flawlessly, and scale with your needs.</p>
         </div>
       </div>
 

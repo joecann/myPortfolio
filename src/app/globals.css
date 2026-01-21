@@ -61,6 +61,7 @@ html[data-theme="dark"] {
 }
 
 body {
+  width: 100%;
   font-family: "BBH Bogle", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -278,11 +279,6 @@ li{
 .landing-image{
   transform: translateX(-100%);
   animation: slideFromLeft 1.5s ease-in forwards;
-}
-
-.landing-text{
-  transform: translateX(200%);
-  animation: slideFromRight 2s ease-in forwards;
 }
 
 .container{
