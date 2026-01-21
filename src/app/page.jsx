@@ -38,7 +38,7 @@ export default function Home() {
     
             <p>Outside of development, I enjoy travelling around the world, hiking for the best views or socialising in a cosy pub with friends.              
             I also enjoy boxing and football, with regular visits to the CBS Arena to watch my home club Coventry City FC. To wind down I enjoy 
-            watch movies & TV.</p>
+            watching movies & TV.</p>
             <br />
             <h4 style={{borderBottom:"2px Solid var(--text-color)", width:"fit-content", marginBottom:"5px"}}>Education</h4>
             <ul style={{listStyleType:"none"}}>
