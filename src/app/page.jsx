@@ -36,8 +36,9 @@ export default function Home() {
             a new build or an existing product, I focus on clear communication, thoughtful design, and delivering work that holds up 
             under real-world use. I strive to make the process simple, easy and as straightforward as possible for the non technical client.</p><br />
     
-            <p>Outside of development, I enjoy travelling around the world, hiking for the best views or socialising in a cosy pub with my friends.              
-            I also enjoy boxing and football, with regular vists the CBS Arena to watch my home club Coventry City FC. To wind down I am a big movie & TV buff.</p>
+            <p>Outside of development, I enjoy travelling around the world, hiking for the best views or socialising in a cosy pub with friends.              
+            I also enjoy boxing and football, with regular visits to the CBS Arena to watch my home club Coventry City FC. To wind down I enjoy 
+            watch movies & TV.</p>
             <br />
             <h4 style={{borderBottom:"2px Solid var(--text-color)", width:"fit-content", marginBottom:"5px"}}>Education</h4>
             <ul style={{listStyleType:"none"}}>
