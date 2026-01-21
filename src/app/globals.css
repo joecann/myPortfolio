@@ -271,21 +271,11 @@ li{
     100%{transform: translateX(0);}
 }
 
-@keyframes slideFromRight {
-  0%{transform: translateX(200%); opacity: 0;}
-  100%{transform: translateX(0); opacity: 1;}
-}
-
 .landing-image{
   transform: translateX(-100%);
   animation: slideFromLeft 1.5s ease-in forwards;
 }
 
-.landing-text{
-  opacity: 0;
-  transform: translateX(200%);
-  animation: slideFromRight 2s ease-in forwards;
-}
 
 .container{
   width: 90%;
