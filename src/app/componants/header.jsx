@@ -52,9 +52,10 @@ export default function Header(){
                 <Image src="/cross2.png" alt="Cross Button" width={48} height={48} />)}
             </div>
             <nav>
-                <button onClick={() => scrollToSection("services")}>Services</button>
                 <button onClick={() => scrollToSection("about")}>About</button>
+                <button onClick={() => scrollToSection("services")}>Services</button>
                 <button onClick={() => scrollToSection("projects")}>Projects</button>
+                <button>Contact</button>
             </nav>
         </header>
     )

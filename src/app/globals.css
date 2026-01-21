@@ -98,6 +98,7 @@ header nav{
   margin-left: auto;
   padding-right: 2%;
   font-size: 1.6rem;
+  z-index: 10;
 }
 
 header button{
@@ -133,7 +134,8 @@ header button:hover{
 .footer li{
   color: var(--background);
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 5px 0;
+  text-align: center;
 }
 
 .toggle-container{
@@ -262,6 +264,26 @@ li{
   margin-top: 2%;
 }
 
+@keyframes slideFromLeft {
+    0%{transform: translateX(-100%)}
+    100%{transform: translateX(0);}
+}
+
+@keyframes slideFromRight {
+  0%{transform: translateX(200%)}
+  100%{transform: translateX(0);}
+}
+
+.landing-image{
+  transform: translateX(-100%);
+  animation: slideFromLeft 1.5s ease-in forwards;
+}
+
+.landing-text{
+  transform: translateX(200%);
+  animation: slideFromRight 2s ease-in forwards;
+}
+
 .container{
   width: 90%;
   margin-top: 3%;
@@ -270,6 +292,7 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
+
   text-align: left;
   margin-bottom: 5%;
   border-top: 2px solid var(--text-color);
@@ -300,6 +323,11 @@ li{
 .text-container p{
   width: 100%;
   align-items: flex-start;
+}
+
+.image-container img{
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .image-wrap{
@@ -399,7 +427,10 @@ li{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 
   .landing-image img, .image-container img{
@@ -408,6 +439,10 @@ li{
 }
 
 @media only screen and (max-width: 764px){
+  .footer li{
+    font-size: 0.8rem;
+  }
+  
   header nav{
     display: none;
   }
@@ -490,9 +525,15 @@ li{
     scroll-snap-stop: always;
   }
 
-  .tc{
-    font-size: 0.9rem;
+  .card h4{
+    font-size: 1.4rem;
   }
+
+  .card h5{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
 
 }
 

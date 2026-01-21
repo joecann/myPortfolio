@@ -24,6 +24,32 @@ export default function Home() {
         </div>
       </div>
 
+      <Container id={"about"}>
+        <div className="service-container">
+          <div className="text-container">
+            <h3>About</h3>
+            <p>Hey there I'm Joe. I am UK based, freelance web developer and passionate backend software 
+            developer. My background combines hands-on development with a strong educational foundation in computer science and cyber security, 
+            shaping how I approach projects - with performance, stability, and security in mind.</p><br />
+
+            <p>I work closely with clients to understand their goals and turn ideas into practical, scalable solutions. Whether it's 
+            a new build or an existing product, I focus on clear communication, thoughtful design, and delivering work that holds up 
+            under real-world use. As a web developer, I strive to make the process simple, easy and as straightforward as possible for the client.</p><br />
+    
+            <p>Outside of coding, I enjoy travelling, hiking, boxin, and winding down with a good film or TV series.</p>
+            <br />
+            <p>Get in Touch: Joecann22@gmail.com</p>
+            <p>BSc International Business Management</p>
+            <p>MSc Computer Science with Cyber Security</p>
+          </div>
+
+          <div className="image-container">
+            <Image src={"/IMG3.jpeg"} alt="Joseph Cann Cartoon Image" width={1000} height={1000} loading="eager"></Image>
+          </div>
+        </div>
+                
+      </Container>
+
       <Container id={"services"}>
         <h3>Web Services</h3>
         <div className="card-grid">
@@ -65,43 +91,11 @@ export default function Home() {
               <li>Unlimited external service integrations</li>
               <li>CMS/blog integration</li>
               <li>User authentication & login</li>
-              <li>E-commerce</li>
               <li>Full backend & API development</li>
               <li>Support & maintenance: Priority & ongoing</li>
             </ul>
           </Card>
         </div>
-        <ul>
-          <li style={{listStyleType:"none"}} className="tc">*Prices are subject to requirements and are listed as an approximate price.</li>
-          <li style={{listStyleType:"none"}} className="tc">**Fees will vary, based on requirements and thrid party integration.</li>
-        </ul>
-      </Container>
-
-      <Container id={"about"}>
-        <div className="service-container">
-          <div className="text-container">
-            <h3>About</h3>
-            <p>I'm a freelance full-stack developer building well-designed, reliable software for the web. My background combines 
-            hands-on development with a strong foundation in computer science and cyber security, shaping how I approach projects 
-            - with performance, stability, and security in mind.</p><br />
-            <p>I work across the stack, creating modern frontends with <strong>React and Next.js</strong> and building dependable 
-            back-end systems using <strong>Java and Python</strong>. I’m comfortable scripting with <strong>Bash</strong>, running 
-            services with <strong>Nginx</strong>, <strong>Javalin</strong>, and <strong>Spring Boot</strong>, and working in <strong>
-            Linux and Ubuntu</strong> environments from development through to deployment.</p><br />
-            <p>I work closely with clients to understand their goals and turn ideas into practical, scalable solutions. Whether it's 
-              a new build or an existing product, I focus on clear communication, thoughtful design, and delivering work that holds up 
-              under real-world use.</p><br />
-            <p>Outside of coding, I enjoy <strong>travelling</strong>, <strong>hiking</strong>, <strong>boxing</strong>, and winding down 
-            with a good <strong>film or TV series</strong>.</p>
-            <br />
-            <p>Get in Touch: Joecann22@gmail.com</p>
-          </div>
-
-          <div className="image-container">
-            <Image src={"/IMG1.png"} alt="Joseph Cann Cartoon Image" width={1000} height={1000} loading="eager"></Image>
-          </div>
-        </div>
-                
       </Container>
       
       <Container id={"projects"}>
