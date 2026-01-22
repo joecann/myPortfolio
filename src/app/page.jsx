@@ -28,7 +28,7 @@ export default function Home() {
         <div className="service-container">
           <div className="text-container">
             <h3>About</h3>
-            <p>Hey there I'm Joe. I am UK based, freelance web developer and passionate backend software 
+            <p>Hey there I'm Joe. I am a UK based, freelance web developer and passionate backend software 
             developer. My background combines hands-on development with a strong educational foundation in computer science and cyber security. 
             I strive to ensure my projects are built with performance, stability, and security in mind.</p><br />
 
