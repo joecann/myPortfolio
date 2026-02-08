@@ -722,6 +722,11 @@ li{
   }
   .testimonial p{
     font-size: 1rem;
+    padding: 10px;
+  }
+
+  .testimonial img{
+    display: none;
   }
 
   #contacts p{
